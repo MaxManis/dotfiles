@@ -1,0 +1,9 @@
+{
+	"suggest.noselect": true,
+	"diagnostic.messageDelay": 200,
+  "javascript.suggestionActions.enabled": false,
+  "tsserver.enable": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true
+}
+
