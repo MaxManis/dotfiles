@@ -1,5 +1,20 @@
-.DS_store
+# env:
+.env
 
+#logs:
+logs
+*.log
+
+# main ignore:
+.DS_Store
+.tmp
+node_modules/
+
+# JavaScript IDEs:
 .idea
-node_modules
+.vscode
+
+# Cache:
+.npm
+.cache/
 

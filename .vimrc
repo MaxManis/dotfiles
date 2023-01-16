@@ -12,6 +12,8 @@ call plug#begin()
 	Plug 'stephpy/vim-yaml'
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'dense-analysis/ale'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Set encoding to utf-8
