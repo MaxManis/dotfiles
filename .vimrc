@@ -12,6 +12,7 @@ call plug#begin()
 	Plug 'stephpy/vim-yaml'
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'dense-analysis/ale'
+  Plug 'neoclide/coc-css'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -163,5 +164,4 @@ let g:javascript_enable_domhtmlcss=1
 " coc-css
 " for SCSS
 autocmd FileType css,scss setl iskeyword+=@-@
-
 
