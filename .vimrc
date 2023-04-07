@@ -15,6 +15,9 @@ call plug#begin()
   Plug 'neoclide/coc-css'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Set encoding to utf-8
@@ -36,6 +39,8 @@ set number
 
 " Enable vim syntax colors
 syntax on
+
+au BufRead,BufNewFile *.ts   setfiletype typescript
 
 " Make backspace work great
 set backspace=indent,eol,start
@@ -83,6 +88,8 @@ set switchbuf=useopen,usetab
 set re=1
 
 map <F2> :NERDTreeToggle<CR>
+
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 colors gruvbox-material
 
@@ -164,4 +171,5 @@ let g:javascript_enable_domhtmlcss=1
 " coc-css
 " for SCSS
 autocmd FileType css,scss setl iskeyword+=@-@
+
 
